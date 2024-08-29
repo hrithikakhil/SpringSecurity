@@ -15,12 +15,12 @@ public class GreetingController {
     @PreAuthorize("hasRole('USER')")
     @GetMapping("/user")
     public String userEndpoint() {
-        return "Hello";
+        return "Hello, User";
     }
 
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/admin")
     public String adminEndpoint() {
-        return "Hello";
+        return "Hello, admin!!!";
     }
 }
